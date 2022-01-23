@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git*": true,
+        "**/.vscode": true,
+        "**/*.cdr": true,
+        "**/*.exe": true,
+        "**/coverage": true,
+        "**/node_modules": true,
+        "**/publish": true
+    }
+}

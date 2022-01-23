@@ -2,21 +2,21 @@
 using namespace std;
 
 int seclar(int arr[],int n) {
-    int lar=0,res=-1;
-    for(int i=1;i<n;i++) {
+    int lar=0,slar=-1;
+    for(int i=0;i<n;i++) {
         if(arr[i]>arr[lar]){
-            res=lar;
-            lar=i;
+        slar=lar;
+        lar=i;
         }
-        else if(arr[i]!=arr[lar]) {
-            if(res==-1 || arr[i]>arr[res]) {
-                res=i;
+
+        else if(arr[i]!=arr[lar])
+        {
+            if(slar==-1 || arr[i]>arr[slar] ) {
+                slar=i;
             }
         }
-
     }
-    return res;
-
+    return slar;
 }
 int main(){
     int arr[]{5,10,12,20};
