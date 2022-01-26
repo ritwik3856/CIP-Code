@@ -1,0 +1,8 @@
+void double_hashing_insert(key) {
+    if(full)
+    return error;
+    probe=h1(key),offset=h2(key);
+    while(table[probe] is occupied) 
+        probe=(probe+offset)%m;
+    table[probe]=key;
+}
