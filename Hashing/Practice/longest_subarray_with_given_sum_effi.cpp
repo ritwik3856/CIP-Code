@@ -3,13 +3,14 @@ using namespace std;
 
 int LongSubSum(int arr[],int n,int sum) {
  unordered_map<int,int>s;
- int presum=0,res=0;
+ int res=0,presum=0;
  for(int i=0;i<n;i++) {
      presum+=arr[i];
-     if(presum==sum)res=i+1;
      if(s.find(presum)==s.end())
      s.insert({presum,i});
-     if(s.find(presum-sum)!=s.end())
+     if(presum==sum)
+      res=i+1;
+    if(s.find(presum-sum)!=s.end())
      res=max(res,i-s[presum-sum]);
  }
  return res;
