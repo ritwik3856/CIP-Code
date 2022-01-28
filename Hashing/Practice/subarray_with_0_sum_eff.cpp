@@ -8,6 +8,8 @@ bool subsum(int arr[],int n) {
         presum+=arr[i];
         if(s.find(presum)!=s.end())
         return true;
+        if(presum==0)
+        return true;
         s.insert(presum);
     }
     return false;

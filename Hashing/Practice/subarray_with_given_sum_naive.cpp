@@ -15,7 +15,7 @@ bool subsumG(int arr[],int sum,int n) {
     return false;
 }
 int main(){
-    int arr[]{5,8,6,13,9,-1};
+    int arr[]{5,8,6,13,3,-1};
     int sum=22,n;
     n=sizeof(arr)/sizeof(arr[0]);
     cout<<subsumG(arr,sum,n);
