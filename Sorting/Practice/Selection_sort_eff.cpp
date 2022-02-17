@@ -3,13 +3,13 @@ using namespace std;
 
 
 void Selection_sort(int arr[],int n) {
-    for(int i=0;i<n;i++) {
-         int  min_idx=i;
-        for(int j=i+1;j<n;j++) 
-        if(arr[j]<arr[min_idx])
-        min_idx=j;
-    swap(arr[i],arr[min_idx]);
-    }
+   for(int i=0;i<n;i++) {
+       int min_ind=i;
+       for(int j=i+1;j<n;j++)
+       if(arr[j]<arr[min_ind])
+       min_ind=j;
+       swap(arr[min_ind],arr[i]);
+   }
 }
 int main() {
     int arr[]={2,1,7,8,3};
