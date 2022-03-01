@@ -2,7 +2,7 @@
 using namespace std;
 
 void Merge(int arr[],int l,int m,int r){
-    int n1=m-l+1,n2=r-m;
+    int n1=m-(l+1),n2=r-m;
     int left[n1],right[n2];
     for(int i=0;i<n1;i++) {left[i]=arr[l+i];}
     for(int i=0;i<n2;i++) {right[i]=arr[m+1+i];}
