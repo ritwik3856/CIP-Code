@@ -9,17 +9,17 @@ struct Node{
         next=NULL;
     }
 };
-void print(Node *head){
-    Node *curr=head;
-    while(curr!=NULL){
-        cout<<curr->data<<" ";
-        curr=curr->next;
-    }
+void print(Node *head) {
+   Node *curr=head;
+   while(curr!=NULL){
+       cout<<curr->data<<" ";
+       curr=curr->next;
+   }
 }
 int main(){
-    Node *head=new Node(3);
-    head->next=new Node(4);
-    head->next->next=new Node(5);
+    Node *head=new Node(5);
+    head->next=new Node(6);
+    head->next->next=new Node(7);
     print(head);
     return 0;
 }

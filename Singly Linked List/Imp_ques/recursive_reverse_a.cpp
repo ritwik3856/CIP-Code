@@ -15,10 +15,10 @@ void print(node *head){
         head=head->next;
     }
 }
-node *reverse_naive(node *head){
+node *reverse_a(node *head){
  if(head==NULL || head->next==NULL)
  return head;
-node *rest_head=reverse_naive(head->next);
+node *rest_head=reverse_a(head->next);
 node *rest_tail=head->next;
 rest_tail->next=head;
 head->next=NULL;
@@ -30,6 +30,6 @@ int main(){
     head->next->next=new node(20);
     head->next->next->next=new node(25);
     head->next->next->next->next=new node(30);
-    head=reverse_naive(head);
+    head=reverse_a(head);
     print(head); 
 }

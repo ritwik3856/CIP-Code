@@ -11,7 +11,7 @@ struct Node{
 };
 int main(){
     Node *head=new Node(30);
-    head->next=new Node(20);
-    head->next->next=new Node(40);
+    head->next=new Node(40);
+    head->next->next=new Node(50);
     return 0;
 }

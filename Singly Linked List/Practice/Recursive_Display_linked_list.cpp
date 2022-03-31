@@ -11,10 +11,9 @@ struct Node{
     }
 };
 void printRecur(Node *head){
-    if(head==NULL){
-        return ;
-    }
-    else{
+  if(head==NULL)
+    return ;
+    else {
         cout<<head->data<<" ";
         return printRecur(head->next);
     }

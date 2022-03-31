@@ -22,7 +22,7 @@ void reverse_naive(node *head){
    }
    for(node *curr=head;curr!=NULL;curr=curr->next){
        curr->data=arr.back();
-      // arr.pop_back();
+       arr.pop_back();
    }
 }
 int main(){
