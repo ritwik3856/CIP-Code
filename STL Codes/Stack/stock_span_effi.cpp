@@ -7,7 +7,7 @@ int main(){
     int arr[]={15,13,12,14,16,8,6,4,10,30};
     int n=sizeof(arr)/sizeof(arr[0]);
    stack<int>s;
-   s.push(arr[0]);
+   s.push(0);
    for(int i=1;i<n;i++){
        if(s.empty()==false && arr[s.top()]<=arr[i])
        s.pop();
