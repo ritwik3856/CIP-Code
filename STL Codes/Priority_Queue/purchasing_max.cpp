@@ -6,9 +6,9 @@ using namespace std;
 
 int printklar(int arr[],int n , int sum){
     int res=0;
-    priority_queue<int,vector<int>,greater<int>>pq{arr,arr+n}; 
-    while( pq.empty()==false && pq.top()<=sum){
-        sum-=pq.top();
+    priority_queue<int,vector<int>,greater<int>>pq{arr,arr+n}; // array to minheap
+    while(sum>=0 && pq.empty()==false && pq.top()<=sum){ // checking minheap one by one
+        sum-=pq.top();  // subtracting the sum in the minheap one by one
         pq.pop();
         res++;
     }

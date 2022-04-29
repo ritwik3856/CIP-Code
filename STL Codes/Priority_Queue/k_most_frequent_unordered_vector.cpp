@@ -16,13 +16,10 @@ void printkfreq(int arr[],int n , int k){
   unordered_map<int,int>m;
   for(int i=0;i<n;i++)
     m[arr[i]]++;
-    vector<pair<int,int>>v{m.begin(),m.end()};
+    vector<pair<int,int>>v(m.begin(),m.end());
     sort(v.begin(),v.end(),mycmp);
     for(int i=0;i<k;i++)
     cout<<v[i].first<<" ";
-
-
-
 }
 int main(){
     int arr[]={10,5,20,5,10,10,30};
