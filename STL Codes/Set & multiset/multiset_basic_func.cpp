@@ -14,6 +14,5 @@ int main(){
     cout<<endl;
     auto it=ms.equal_range(2); // give the lower and upper bound in a pair.
     cout<<*it.first<<" "<<*it.second;
-    
     return 0;
 }
