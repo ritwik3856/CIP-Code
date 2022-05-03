@@ -8,7 +8,7 @@ using namespace std;
 //     m.insert({2,"idle"});
 //     m.insert({1,"practice"});
 //     for(auto it=m.lower_bound(3);it!=m.end();it++)
-//     cout<<(*it).second<<" ";
+//     cout<<(*it).second<<" ";                       //output will be gfg only 
 //     cout<<endl;
 
 //     return 0;
@@ -19,7 +19,7 @@ int main(){
     m.insert({2,"idle"});
     m.insert({1,"practice"});
     for(auto it=m.lower_bound(3);it!=m.end();it++)
-    cout<<(*it).second<<" ";
+    cout<<(*it).second<<" "; // as it is in decreasing order .
     cout<<endl;
     
     return 0;
