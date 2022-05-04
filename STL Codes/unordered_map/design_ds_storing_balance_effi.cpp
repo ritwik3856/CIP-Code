@@ -17,7 +17,7 @@ int main(){
     design_map d1;
     d1.set(1,100);
     d1.set(2,200);
-    d1.set(1,5000);
+    d1.set(1,5000); //overwrites the value in the map
     cout<<d1.get(1);
     return 0;
 }
