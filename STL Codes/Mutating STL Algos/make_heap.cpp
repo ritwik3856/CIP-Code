@@ -17,7 +17,7 @@ int main(){
     for(auto x:v)
     cout<<x<<" ";
     cout<<endl;
-    sort_heap(v.begin(),v.end());
+    sort_heap(v.begin(),v.end(),greater<int>());// if not passed greater funciton then sort not happen as we used in make heap.
     for(auto x:v)
     cout<<x<<" ";
     cout<<endl;

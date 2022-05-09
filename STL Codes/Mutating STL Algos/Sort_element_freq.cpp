@@ -6,9 +6,9 @@ using namespace std;
 
 bool mycmp(pair<int,int>p1,pair<int,int>p2){
     if(p1.second==p2.second)
-    return p1.first<p2.first;
+    return p1.first<p2.first; //for smaller the number first if same frequencies
     else
-    return p1.second>p2.second;
+    return p1.second>p2.second; //for decresing order of frequencies
 }
 int main(){
     int arr[]={10,5,20,10,10,5,20};

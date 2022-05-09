@@ -17,7 +17,7 @@ int main(){
     cout<<x<<" ";
     cout<<endl;
 
-    reverse(v2.begin(),v2.end());
+    reverse(v2.begin(),v2.end()); // reverse the order ...
     for(auto x:v2)
     cout<<x<<" ";
     return 0;

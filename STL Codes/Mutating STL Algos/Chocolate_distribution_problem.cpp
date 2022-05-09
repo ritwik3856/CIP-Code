@@ -11,8 +11,8 @@ int main(){
    return -1;
    sort(arr,arr+s);
    int res=arr[m-1]-arr[0];
-   for(int i=0;(i+m-1)<s;i++){
-       res=min(res,(arr[i+m-1]-arr[i]));
+   for(int i=1;(i+m-1)<s;i++){ //starting from 1 as we got the the first difference in upper statement.
+       res=min(res,(arr[i+m-1]-arr[i])); 
    }
    cout<<res;
     return 0;

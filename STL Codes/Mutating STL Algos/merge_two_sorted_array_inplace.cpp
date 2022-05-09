@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     int a[]={3,20,40};
-    int b[]={2,10,12};
+    int b[]={2,10,12};  //not using the heap because they are sorted.
     int n=3,m=3;
 
     for(int i=0;i<m;i++){
@@ -15,7 +15,7 @@ int main(){
             push_heap(b,b+3,greater<int>());
         }
     }
- //   sort(b,b+3);
+    sort(b,b+3); //also used the sort_heap function
     for(int i=0;i<m;i++)
     cout<<a[i]<<" ";
 
