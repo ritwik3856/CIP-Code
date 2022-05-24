@@ -10,7 +10,7 @@ int main(){
         for(int j=0;j<n;j++)
         if(arr[j]==arr[i])
         c++;
-        if(c%2!=0)
+        if(c%2!=0) 
         cout<<arr[i]<<" ";
     }
     return 0;
