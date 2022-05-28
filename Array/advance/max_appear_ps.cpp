@@ -5,7 +5,7 @@ using namespace std;
 int max_appear(int l[],int r[],int n){
    int arr[1000];
 
-   memset(arr,0,sizeof(arr));
+   memset(arr,0,sizeof(arr)); //it added 0 to all the element of array.
 
    for(int i=0;i<n;i++){
        arr[l[i]]++;
