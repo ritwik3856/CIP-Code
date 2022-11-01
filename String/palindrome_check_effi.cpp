@@ -2,12 +2,13 @@
 using namespace std;
 
 bool CheckPal(string &str){
-    int low=0 , high = str.length()-1;
-    while(low<=high){
-        if(str[low]!=str[high])
-        return 0;
-        low++;
-        high--;
+    int low=0,high=str.length()-1;
+    while(low<high){
+        if(str[low]==str[high]){
+            low++;
+            high--;
+        }
+        else return 0;
     }
     return 1;
 }

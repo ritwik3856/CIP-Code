@@ -17,6 +17,7 @@ int main(){
     cout<<x.first<<" "<<x.second<<endl;
     double res=0.0;
     for(int i=0;i<n;i++){
+        
         if(arr[i].second<=w){
         res+=arr[i].first; // adding the cost 
         w-=arr[i].second; // subtracting the weight.

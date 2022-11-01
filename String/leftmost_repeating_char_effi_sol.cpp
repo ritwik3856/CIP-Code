@@ -1,18 +1,20 @@
 #include<iostream>
 using namespace std;
 
-const int lc=256;
+
 int leftmost(string &str){
-  int fidx[lc]={-1};
+  int lc=256;
+  int findex[lc];
+  fill(findex,findex+lc,-1);
   int res=INT_MAX;
   for(int i=0;i<str.length();i++){
-      int fi=fidx[str[i]];
-      if(fi==-1)
-            fidx[str[i]]=i;
-        else
-            res=min(res,fi);
+    int fi=findex[str[i]]; 
+    if(fi==-1)
+    findex[str[i]]=i;
+    else
+    res=min(res,fi);
   }
-  return (res==INT_MAX?-1:res);
+  return res;
 }
 int main(){
     string str="geeksforgeeks";

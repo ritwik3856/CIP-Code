@@ -38,9 +38,14 @@ class minheap{
 
 int main(){
     minheap h(10);
-    h.insert(20);
     h.insert(30);
-    h.insert(40);
+    h.insert(70);
+    h.insert(9);
+    h.insert(8);
+    h.insert(7);
+    h.insert(14);
+    h.insert(20);
+    h.insert(79);
     h.pr();
     return 0;
 }

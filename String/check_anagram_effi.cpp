@@ -2,20 +2,22 @@
 #include<algorithm>
 using namespace std;
 
-const int lc=256;
+
 bool CheckAnagram(string &s1,string &s2){
-    if(s1.length()!=s2.length())
+   int co=256;
+   int count[co]={0};
+   if(s1.length()!=s2.length())
     return false;
-    int count[lc]={0};
-    for(int i=0;i<s1.length();i++){
+    
+   for(int i=0;i<s1.length();i++){
         count[s1[i]]++;
         count[s2[i]]--;
-    }
-    for(int i=0;i<lc;i++){
-    if(count[i]>0)
-    return false;
-    }
-    return true;
+   }
+   for(int i=0;i<256;i++){
+    if(count[i]!=0)
+        return false;
+   }
+   return true;
 }
 int main(){
     string s1="listen";

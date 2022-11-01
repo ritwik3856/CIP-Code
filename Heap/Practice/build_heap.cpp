@@ -2,11 +2,12 @@
 using namespace std;
 
 class heap{
+
     int cap;
     int size;
     int *arr;
-    public:
 
+    public:
     heap(int x){
         size=0;
         cap=x;
@@ -21,6 +22,8 @@ class heap{
     int parent(int i){
         return (i-1/2);
     }
+
+
     void insert(int i){
         if(size==cap)
         return;
@@ -31,6 +34,8 @@ class heap{
             j=parent(j);
         }
     }
+
+
     void minheapify(int i){
         int lt=left(i),rt=right(i),smallest=i;
         if(lt<size && arr[lt]<arr[smallest])
@@ -42,10 +47,14 @@ class heap{
             minheapify(smallest);
         }
     }
+
+
     void buildheap(){
-      for(int i=(size-2)/2;i>=0;i--)
+      for(int i=(size-2)/2;i>=0;i--)  //size-1 for the regular size then for parent i-1/2 that is size-2/2
       minheapify(i);
     }
+
+
     void print(){
         for(int i=0;i<size;i++){
             cout<<arr[i]<<" ";

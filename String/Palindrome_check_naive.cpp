@@ -4,8 +4,8 @@ using namespace std;
 
 bool CheckPal(string &str){
     string rev=str;
-    reverse(rev.begin(),rev.end());
-    return (str==rev);
+    reverse(str.begin(),str.end());
+    return str==rev;
 }
 int main(){
     string str="abba";

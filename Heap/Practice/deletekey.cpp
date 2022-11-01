@@ -54,7 +54,7 @@ class heap{
         minheapify(0);
         return arr[size];
     }
-     void decreasekey(int i,int x){
+    void decreasekey(int i,int x){
         arr[i]=x;
         while(i!=0 && arr[i]<arr[parent(i)]){
         swap(arr[i],arr[parent(i)]);
